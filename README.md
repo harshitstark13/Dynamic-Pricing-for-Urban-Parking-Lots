@@ -21,10 +21,12 @@ Model comparison and analysis
 2. 📊 Models Implemented
 We developed and compared three distinct pricing models:
 
-Model	Name	Basis	Formula Summary
-1	Occupancy-Based	Parking capacity utilization	Price = Base + α × (Occupancy / Capacity)
-2	Demand-Based	Real-time features + ML	Price = f(Occupancy, VehicleType, QueueLength, ...)
-3	Competitor-Based	Competitive pricing strategy	Price = Avg(Model1, Model2) × Competitor Adjustment
+| Model | Name             | Basis                        | Formula Summary                                       |
+| ----- | ---------------- | ---------------------------- | ----------------------------------------------------- |
+| 1     | Occupancy-Based  | Parking capacity utilization | `Price = Base + α × (Occupancy / Capacity)`           |
+| 2     | Demand-Based     | Real-time features + ML      | `Price = f(Occupancy, VehicleType, QueueLength, ...)` |
+| 3     | Competitor-Based | Competitive pricing strategy | `Price = Avg(Model1, Model2) × Competitor Adjustment` |
+
 
 3. 📈 Demand Function Explanation
 Our demand estimation relies on a composite function using variables:
