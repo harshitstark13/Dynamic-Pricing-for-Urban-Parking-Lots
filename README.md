@@ -127,12 +127,14 @@ Edit
 pip install pandas numpy bokeh xgboost pathway
 
 ## 🔍 Visualizations
-Bokeh is used to generate interactive line charts comparing:
 
-Pricing trends across time
+Bokeh is used to generate interactive charts for:
 
-Occupancy levels vs price
+- Pricing trends across time
+- Occupancy levels vs price
+- Cross-model price comparisons
+- Real-time demand fluctuations
 
-Cross-model price comparisons
+### 📷 Sample Visualization
 
-Real-time demand fluctuations
+![Bokeh Plot](bokeh_plot.png)
