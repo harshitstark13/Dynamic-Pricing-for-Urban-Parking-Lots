@@ -15,7 +15,6 @@ An intelligent, real-time pricing engine for urban parking spaces using real-tim
 - [🛠️ Tech Stack](#️-tech-stack)
 - [📌 Setup & Execution](#-setup--execution)
 - [🔍 Visualizations](#-visualizations)
-- [📜 License](#-license)
 
 ---
 
@@ -59,3 +58,81 @@ We treat price as a **non-linear function** of key real-time features:
 ### 📐 Model 2 (Demand-Based ML Pricing)
 ```math
 Price = f(Occupancy, QueueLength, VehicleType, TrafficCondition, IsSpecialDay)
+```
+
+## 📎 Assumptions
+Price Elasticity: Higher demand → Higher tolerance for increased prices.
+
+Vehicle-Type Weightage: Trucks/cars priced higher than bikes/cycles.
+
+No Prior Reservations: All decisions are made in real time.
+
+Uniform Zonal Pricing: No geographical pricing bias.
+
+## 📉 Pricing Dynamics
+🟦 Model 1: Occupancy-Based
+Linear growth with utilization
+
+Simple, transparent
+
+Lacks responsiveness to real-world context
+
+🟧 Model 2: Demand-Based ML
+Multi-variable pricing logic
+
+Adapts to context and external conditions
+
+Suitable for dense urban environments
+
+🟩 Model 3: Competitor-Aware
+Weighted average of Models 1 & 2
+
+Adds commercial realism with simulated competition
+
+Ideal for areas with multiple parking providers
+
+📦 Dataset
+Main Dataset: Real-time vehicle entry logs, traffic levels, special day indicators, etc.
+
+Simulated Features: Competitor pricing, queue length, traffic conditions
+
+Time Span: Hour-wise parking data for a central urban zone
+
+## 🛠️ Tech Stack
+Python, Pandas, NumPy
+
+Pathway: For real-time data simulation
+
+XGBoost / Random Forest: ML models for dynamic pricing
+
+Bokeh: Interactive graphs and visualizations
+
+Colab / Jupyter: Development environment
+
+## 📌 Setup & Execution
+⚙️ Clone the Repo
+bash
+Copy
+Edit
+git clone https://github.com/your-username/urban-parking-dynamic-pricing.git
+cd urban-parking-dynamic-pricing
+▶️ Run the Notebook
+Open Dynamic_Pricing_Notebook.ipynb in Google Colab or Jupyter.
+
+Ensure the required libraries are installed:
+
+bash
+Copy
+Edit
+pip install pandas numpy bokeh xgboost pathway
+
+## 🔍 Visualizations
+Bokeh is used to generate interactive line charts comparing:
+
+Pricing trends across time
+
+Occupancy levels vs price
+
+Cross-model price comparisons
+
+Real-time demand fluctuations
