@@ -13,6 +13,7 @@ An intelligent, real-time pricing engine for urban parking spaces using real-tim
 - [📉 Pricing Dynamics](#-pricing-dynamics)
 - [📦 Dataset](#-dataset)
 - [🛠️ Tech Stack](#️-tech-stack)
+- [🛠️ Architecture Diagram](#architecture-diagram)
 - [📌 Setup & Execution](#-setup--execution)
 - [🔍 Visualizations](#-visualizations)
 
@@ -109,6 +110,22 @@ XGBoost / Random Forest: ML models for dynamic pricing
 Bokeh: Interactive graphs and visualizations
 
 Colab / Jupyter: Development environment
+
+## 🛠️ Architecture Diagram
+
+```mermaid
+flowchart TD
+    A[Raw Parking Lot Data] --> B[Data Preprocessing]
+    B --> C[Feature Engineering]
+    C --> D[Real-Time Simulation with Pathway]
+    D --> E1[Model 1: Occupancy-Based]
+    D --> E2[Model 2: ML Demand-Based]
+    D --> E3[Model 3: Competitor-Based]
+    E1 --> F[Pricing Output]
+    E2 --> F
+    E3 --> F
+    F --> G[Interactive Visualization with Bokeh]
+```
 
 ## 📌 Setup & Execution
 ⚙️ Clone the Repo
