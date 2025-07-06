@@ -13,7 +13,6 @@ An intelligent, real-time pricing engine for urban parking spaces using real-tim
 - [📉 Pricing Dynamics](#-pricing-dynamics)
 - [📦 Dataset](#-dataset)
 - [🛠️ Tech Stack](#️-tech-stack)
-- [🛠️ Architecture Diagram](#architecture-diagram)
 - [📌 Setup & Execution](#-setup--execution)
 - [🔍 Visualizations](#-visualizations)
 
@@ -111,7 +110,7 @@ Bokeh: Interactive graphs and visualizations
 
 Colab / Jupyter: Development environment
 
-## 🛠️ Architecture Diagram
+### 🛠️ Architecture Diagram
 
 ```mermaid
 flowchart TD
