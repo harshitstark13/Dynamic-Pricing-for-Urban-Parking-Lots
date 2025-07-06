@@ -70,28 +70,29 @@ No Prior Reservations: All decisions are made in real time.
 Uniform Zonal Pricing: No geographical pricing bias.
 
 ## 📉 Pricing Dynamics
-🟦 Model 1: Occupancy-Based
+
+### 🟦 Model 1: Occupancy-Based
 Linear growth with utilization
 
 Simple, transparent
 
 Lacks responsiveness to real-world context
 
-🟧 Model 2: Demand-Based ML
+### 🟧 Model 2: Demand-Based ML
 Multi-variable pricing logic
 
 Adapts to context and external conditions
 
 Suitable for dense urban environments
 
-🟩 Model 3: Competitor-Aware
+### 🟩 Model 3: Competitor-Aware
 Weighted average of Models 1 & 2
 
 Adds commercial realism with simulated competition
 
 Ideal for areas with multiple parking providers
 
-📦 Dataset
+### 📦 Dataset
 Main Dataset: Real-time vehicle entry logs, traffic levels, special day indicators, etc.
 
 Simulated Features: Competitor pricing, queue length, traffic conditions
